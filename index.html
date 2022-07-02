@@ -29,9 +29,13 @@
     <br>
     <br>
     <!-- Form Example: -->
-    <form action="new">
-        <p>Username:</p><input type="text" placeholder="Username">
-        <p>Password:</p><input type="password" placeholder="Password">
+    <form action="/" method="GET"> <!-- Action tells it where to submit, method tells it what type of HTTP method to use (ex. GET, POST). -->
+        <p>Sign in</p>
+        <p>Username</p><input required type="text" name="username" placeholder="Username" minlength="3" maxlength="31">
+        <p>Password</p><input type="password" required name="password" placeholder="Password" autocomplete="off">
+        <p>Email</p><input type="email" required name = "email" placeholder="someone@example.com" title="someone@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+        <p>Phone</p><input type="tel" name="phonenumber" placeholder="555-555-5555" title="Format as ###-###-####" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        <!-- Patterns: Number (0 through 9) and {how many digits} -->
         <input type="submit">
     </form>
 

@@ -1,0 +1,54 @@
+<!-- Summer Camp Registration Example -->
+
+<!-- In this example, we will be using Label tags instead of P tags, since Label tags are usable by screen readers (for visually impaired folks) -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+  </head>
+  <body>
+    <h1>Summer Camp Registration</h1>
+    <form action="">
+      <div>
+        <label for="First Name">First Name</label> 
+        <input type="text" id="firstname" required/>
+        <label for="Last Name">Last Name</label>
+        <input type="text" id="lastname" required />
+      </div><br><br>
+      <div>
+        <label for="Email">Email</label> 
+        <input type="email" id="email" required>
+        <label for="Password">Password</label> 
+        <input type="password" id="password" required>
+      </div>
+      <div>
+        <p> Select a month:</p> 
+        <div>
+          <input type="radio" name="month" id="june" value="june" checked> <!-- Use Checked to set a default preselected value. -->
+          <label for="june">June</label>
+        </div>
+        <div>
+          <input type="radio" name="month" id="july" value="july ">
+          <label for="july">July</label>
+        </div>
+        <div>
+          <input type="radio" name="month" id="august" value="august">
+          <label for="august">August</label>
+        </div>
+      </div><br>
+      <div> <!-- For dropdown lists, we use a Select element, NOT an Input element. --> 
+        <label for="age">Select Age Range:</label>
+        <select name="age" id="age">
+          <option value="under18">Under 18</option>
+          <option value="18to30">18 - 30</option>
+          <option value="30to50">30 - 50</option>
+          <option value="50plus">50+</option>
+        </select>
+      </div><br>
+      <input type="submit" value="Register">
+    </form>
+  </body>
+</html>
