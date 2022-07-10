@@ -1,0 +1,33 @@
+
+div.Light{
+/* Draw a circle, background color unspecified.  */
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 50%;
+    float:left;
+}
+
+
+div:nth-child()
+
+
+
+
+
+/* 
+#Red{
+    /* Draw a box, but round the corners completely.  */
+    background: #f00;
+}
+#Yellow {
+    /* Draw a box, but round the corners completely.  */
+    background: yellow;
+
+}
+#Green {
+    /* Draw a box, but round the corners completely.  */
+    background: #00ff00;
+
+} 
+*/
