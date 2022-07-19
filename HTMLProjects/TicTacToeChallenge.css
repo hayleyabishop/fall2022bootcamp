@@ -1,0 +1,23 @@
+h1 {
+    text-align: center;
+}
+
+table {
+    border: 2px white solid;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+table#board td {
+    border: 2px white groove;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+}
+
+table#board checkbox {
+    /*Unhide hidden content*/
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}

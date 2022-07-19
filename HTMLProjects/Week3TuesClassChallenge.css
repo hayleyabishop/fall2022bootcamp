@@ -1,0 +1,46 @@
+/* This uses pseudo-classes. */
+
+
+/* Blue bar across the top, roughly 50px tall, 100% of the screen. f icon on the left; Home, Profile, Contact, Help buttons Buttons link to pages. use HTML to make buttons.  */
+
+body {
+    margin: 0;
+    font-family: Roboto;
+}
+
+#navBar {
+    color: white;
+    background-color: #4267b2;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul#navBar li {
+    display: block;
+    float: right;
+    padding: none;
+}
+
+ul#navBar a {
+    color: white;
+    display: block;
+    background-color: #4267b2;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+
+ul#navBar a:hover {
+    background-color: aqua;
+    color: yellow;
+}
+
+.navButton {}
+
+.fa-facebook-square {
+    color: white;
+    padding: 22px 60px;
+    float: left;
+}
