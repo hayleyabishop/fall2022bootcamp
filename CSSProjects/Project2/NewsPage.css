@@ -1,29 +1,36 @@
 * {
-    overflow: auto;
+    overflow: none;
 }
 
 .navBar {
     background-color: darkslategray;
     width: 100%;
-    overflow: auto;
+    overflow: none;
     color: white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: large;
 
 }
 
-.navBarItems {
-    padding: 20px;
+.navBarItems * {
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
 
 }
 
-.navBarItems:hover {
+
+.navBarItems>li:hover {
     background-color: slategray;
 }
 
-.NavBarDropDown {
-    padding: 20px;
-}
+
+/* .navBarItems:hover {
+    background-color: slategray;
+} */
+
+.NavBarDropDown {}
 
 .NavBarDropDown:hover {
     background-color: slategray;
